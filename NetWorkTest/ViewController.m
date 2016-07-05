@@ -57,6 +57,7 @@
 
 - (void)onButtonClicked:(UIButton *)button
 {
+    // Navigate to different pages
     if([button.currentTitle isEqualToString:@"basic network"])
     {
         BasicNetworkViewController *basicNetworkViewController = [[BasicNetworkViewController alloc] init];
@@ -64,7 +65,8 @@
     }
     else if([button.currentTitle isEqualToString:@"afnetworking"])
     {
-        NSLog(@"afnetworing");
+        AfnetworkViewController *afnetworkViewController = [[AfnetworkViewController alloc] init];
+        [self.navigationController pushViewController:afnetworkViewController animated:YES];
     }
 }
 
