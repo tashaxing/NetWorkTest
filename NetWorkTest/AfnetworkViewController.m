@@ -109,7 +109,7 @@
     NSString *url = @"http://ipad-bjwb.bjd.com.cn/DigitalPublication/publish/Handler/APINewsList.ashx";
     NSDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{@"date":@"20131129", @"startRecord":@"1", @"len":@"5", @"udid":@"1234567890", @"terminalType":@"Iphone", @"cid":@"213"}];
     
-    [manager GET:url
+    [manager POST:url
        parameters:params
          progress:^(NSProgress * _Nonnull uploadProgress) {
              // Do sth to process progress
