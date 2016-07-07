@@ -194,7 +194,7 @@
     /*
      typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
      AFNetworkReachabilityStatusUnknown          = -1,      unkown
-     AFNetworkReachabilityStatusNotReachable     = 0,       c
+     AFNetworkReachabilityStatusNotReachable     = 0,       offline
      AFNetworkReachabilityStatusReachableViaWWAN = 1,       cellular
      AFNetworkReachabilityStatusReachableViaWiFi = 2,       wifi
      };
@@ -208,7 +208,7 @@
                 NSLog(@"unkown");
                 break;
             case AFNetworkReachabilityStatusNotReachable:
-                NSLog(@"unkown");
+                NSLog(@"offline");
                 break;
                 
             case AFNetworkReachabilityStatusReachableViaWWAN:
